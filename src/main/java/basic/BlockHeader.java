@@ -23,6 +23,7 @@ public class BlockHeader {
         if(previousBlockHash != null) {
             tmpStr += new String(previousBlockHash, 0, previousBlockHash.length);
         }
+        
         tmpStr += merkleRootHash;
         return tmpStr.getBytes(StandardCharsets.UTF_8);
     }
